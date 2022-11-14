@@ -28,12 +28,12 @@
         }
 
         .dropdown-menu[data-bs-popper] {
-            margin-top: 1.2rem;
+            border-radius: 10px;
+            margin-top: 1rem;
         }
 
         .dropdown-item {
-            font-size: 23px;
-            border-bottom: .5px solid black;
+            font-size: 20px;
 
 
         }
@@ -221,6 +221,11 @@
         #modal-filter {
             display: none;
         }
+
+        .bTitle a {
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 
@@ -248,10 +253,6 @@
                                             <td class="ml-2">Cari</td>
                                         </tr>
                                     </table>
-                                    <button type="button" class="btn btn-primary ml-4 d-lg-none d-sm-block"
-                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="modal-filter">
-                                        Coba
-                                    </button>
                                 </button>
                             </div>
                         </div>
@@ -268,10 +269,16 @@
                             </span>
                         </a>
 
-                        <ul class="dropdown-menu" style="padding-bottom:.5px ;">
-                            <li><a class="dropdown-item" href="#">Profile Saya</a></li>
-                            <li><a class="dropdown-item" href="#">Saya Booking</a></li>
-                            <li><a class="dropdown-item" href="#" style="border-bottom: none;">Keluar</a></li>
+                        <ul class="dropdown-menu" id="profile">
+                            <li><a class="dropdown-item" href="profile.html" style="border-bottom: 1px solid black;"><i
+                                        class="fa-solid fa-user"></i>
+                                    Profile</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid black;"><i
+                                        class="fa-solid fa-briefcase"></i> Pesanan
+                                    Saya</a></li>
+                            <li><a class="dropdown-item" data-toggle="modal" data-target="#logoutModal" href="#"><i
+                                        class="fa-solid fa-right-from-bracket"></i>Log
+                                    out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -404,12 +411,16 @@
                                     class="fa-solid fa-list"></i>
                                 Filter</a>
                         </div>
-                        <div class="row my-3">
+                        <div class="row my-3 bungkusKamar">
                             <div class="col-6">
-                                <img class="w-100" src="images/bedroom-ga8e74d337_1920 1.png" alt="">
+                                <a href="halaman3.html">
+                                    <img class="w-100" src="images/bedroom-ga8e74d337_1920 1.png" alt="">
+                                </a>
                             </div>
-                            <div class="col-6 mt-2">
-                                <h5 style="color:#222222;font-size: 24px;">Sans Hotel Puri Indah Jakarta</h5>
+                            <div class="col-6 mt-2 bTitle">
+                                <a href="halaman3.html">
+                                    <h5 style="color:#222222;font-size: 24px;">Sans Hotel Puri Indah Jakarta</h5>
+                                </a>
                                 <p style="font-size:15px">Kembangan</p>
                                 <table style="font-size: 12px;">
                                     <tr>
@@ -430,12 +441,16 @@
 
                             </div>
                         </div>
-                        <div class="row my-3">
+                        <div class="row my-3 bungkusKamar">
                             <div class="col-6">
-                                <img class="w-100" src="images/hotel-g6515fe641_1920 2.png" alt="">
+                                <a href="halaman3.html">
+                                    <img class="w-100" src="images/hotel-g6515fe641_1920 2.png" alt="">
+                                </a>
                             </div>
-                            <div class="col-6 mt-2">
-                                <h5 style="color:#222222;font-size: 24px;">Wisma Bintang Red</h5>
+                            <div class="col-6 mt-2 bTitle">
+                                <a href="halaman3.html">
+                                    <h5 style="color:#222222;font-size: 24px;">Wisma Bintang Red</h5>
+                                </a>
                                 <p style="font-size:15px">Kembangan</p>
                                 <table style="font-size: 12px;">
                                     <tr>
@@ -455,13 +470,17 @@
                                 <p class="text-danger fs-5 mt-4">Rp 500.000</p>
                             </div>
                         </div>
-                        <div class="row my-3">
+                        <div class="row my-3 bungkusKamar">
                             <div class="col-6">
-                                <img class="w-100" src="images/hotel-room-gbadde5f29_1920 2.png" alt=""
-                                    style="border-radius: 20px;">
+                                <a href="halaman3.html">
+                                    <img class="w-100" src="images/hotel-room-gbadde5f29_1920 2.png" alt=""
+                                        style="border-radius: 20px;">
+                                </a>
                             </div>
-                            <div class="col-6 mt-2">
-                                <h5 style="color:#222222;font-size: 24px;">Kapuk Businees Park</h5>
+                            <div class="col-6 mt-2 bTitle">
+                                <a href="halaman3.html">
+                                    <h5 style="color:#222222;font-size: 24px;">Kapuk Businees Park</h5>
+                                </a>
                                 <p style="font-size:15px">Kembangan</p>
                                 <table style="font-size: 12px;">
                                     <tr>
@@ -482,12 +501,16 @@
 
                             </div>
                         </div>
-                        <div class="row my-3">
+                        <div class="row my-3 bungkusKamar">
                             <div class="col-6">
-                                <img class="w-100" src="images/bedroom-gf651aa221_1920 2.png" alt="">
+                                <a href="halaman3.html">
+                                    <img class="w-100" src="images/bedroom-gf651aa221_1920 2.png" alt="">
+                                </a>
                             </div>
-                            <div class="col-6 mt-2">
-                                <h5 style="color:#222222;font-size: 24px;">Stasiun Poris Tangerang</h5>
+                            <div class="col-6 mt-2 bTitle">
+                                <a href="halaman3.html">
+                                    <h5 style="color:#222222;font-size: 24px;">Stasiun Poris Tangerang</h5>
+                                </a>
                                 <p style="font-size:15px">Kembangan</p>
                                 <table style="font-size: 12px;">
                                     <tr>
@@ -642,6 +665,24 @@
 
         </div>
     </div>
+    </div>
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         const rangeInput = document.querySelectorAll(".range-input input"),

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman 2</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
     <style>
         .footer {
             border-top: 1px solid grey;
@@ -46,12 +48,14 @@
                                 <i class="fa-solid fa-user"></i> Hallo, Jalu
                             </a>
                             <ul class="dropdown-menu" id="profile">
-                                <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid black;"><i
-                                            class="fa-solid fa-user"></i> Profile</a></li>
+                                <li><a class="dropdown-item" href="profile.html"
+                                        style="border-bottom: 1px solid black;"><i class="fa-solid fa-user"></i>
+                                        Profile</a></li>
                                 <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid black;"><i
                                             class="fa-solid fa-briefcase"></i> Pesanan
                                         Saya</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i>Log
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#logoutModal" href="#"><i
+                                            class="fa-solid fa-right-from-bracket"></i>Log
                                         out</a></li>
                             </ul>
                         </div>
@@ -76,7 +80,7 @@
                 </p>
                 <p>Alamat email - izumii@mail.com
                 </p>
-                <p>Kata Sandi - <small class="text-danger" style="font-size: 11px;"> <a href="#"
+                <p>Kata Sandi - <small class="text-danger" style="font-size: 11px;"> <a href="password.html"
                             class="text-danger text-decoration-none">Ganti Password</a> </small> </p>
             </div>
         </div>
@@ -85,6 +89,25 @@
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-facebook"></i>
+    </div>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
